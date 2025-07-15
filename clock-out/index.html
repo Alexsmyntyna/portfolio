@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock Out</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">Home</a>
+      </nav>
+      <h1>Clock Out</h1>
+    </header>
+
+    <section class="content">
+      <p>
+        <strong>Stay on top of your time and money</strong> with Clock Out, the
+        simple yet powerful time and earnings tracker for anyone who works by
+        the hour.
+      </p>
+
+      <h2>Key Features:</h2>
+      <ul>
+        <li>
+          <strong>One-Tap Clock In/Out:</strong> Start and stop your timer right
+          from the Home screen.
+        </li>
+        <li>
+          <strong>Multiple Workplaces:</strong> Add as many jobs as you need —
+          each with its own hourly wage, location lookup, notes, and custom
+          settings.
+        </li>
+        <li>
+          <strong>Instant Summaries:</strong> See This Week vs Last Week
+          earnings and total hours at a glance.
+        </li>
+        <li>
+          <strong>Monthly Breakdown:</strong> Dive into detailed monthly reports
+          — total hours, gross earnings, and comparisons to last month.
+        </li>
+        <li>
+          <strong>Shift History:</strong> Browse every shift you’ve worked,
+          complete with date, duration, and dollars earned.
+        </li>
+        <li>
+          <strong>CSV Export:</strong> Easily back up or share your data for
+          payroll, taxes, or personal records.
+        </li>
+        <li>
+          <strong>Sample Data & Debug Tools:</strong> Quickly populate sample
+          shifts for testing or onboarding.
+        </li>
+        <li>
+          <strong>Privacy-First:</strong> All your data stays on your device. No
+          accounts, no tracking, no surprises.
+        </li>
+      </ul>
+
+      <p>
+        Whether you’re juggling side gigs, hourly work, or a full-time position,
+        Clock Out makes it dead simple to monitor your progress and maximize
+        your earnings.
+        <strong>Download now and clock in on your financial goals!</strong>
+      </p>
+
+      <div class="carousel-wrapper">
+        <div class="carousel" id="carousel">
+          <img src="assets/Clock-out-1.jpg" alt="Clock Out screenshot 1" />
+          <img src="assets/Clock-out-2.jpg" alt="Clock Out screenshot 2" />
+          <img src="assets/Clock-out-3.jpg" alt="Clock Out screenshot 3" />
+          <img src="assets/Clock-out-4.jpg" alt="Clock Out screenshot 4" />
+        </div>
+        <div class="carousel-buttons">
+          <button id="scrollLeft">&#8592; Prev</button>
+          <button id="scrollRight">Next &#8594;</button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const carousel = document.getElementById("carousel");
+      const scrollLeftBtn = document.getElementById("scrollLeft");
+      const scrollRightBtn = document.getElementById("scrollRight");
+
+      scrollLeftBtn.addEventListener("click", () => {
+        carousel.scrollBy({ left: -300, behavior: "smooth" });
+      });
+
+      scrollRightBtn.addEventListener("click", () => {
+        carousel.scrollBy({ left: 300, behavior: "smooth" });
+      });
+    </script>
+  </body>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p><strong>Alex Smyntyna</strong> — Software Developer</p>
+      <p>
+        <a href="mailto:alexsmyntyna@icloud.com">alexsmyntyna@icloud.com</a>
+      </p>
+      <div class="footer-buttons">
+        <a href="privacy-policy.html" class="footer-btn">Privacy Policy</a>
+        <a href="support.html" class="footer-btn">Support</a>
+      </div>
+      <p class="copyright">© 2025 Alex Smyntyna</p>
+    </div>
+  </footer>
+</html>
