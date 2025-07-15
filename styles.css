@@ -171,3 +171,36 @@ footer.site-footer {
 .footer-btn:hover {
   background-color: #005fcc;
 }
+
+a.subtle-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+a.subtle-link p {
+  margin: 0;
+}
+
+.app-store-button {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.app-store-button:hover {
+  background-color: #111;
+  transform: translateY(-2px);
+}
+
+.app-store-button-wrapper {
+  text-align: center;
+  margin-top: 2rem;
+}
